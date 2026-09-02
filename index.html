@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beauty hub @ Shriya - Digital Business Card</title>
+  <title>Beauty hub @ Shriya - Clothing & Jewellery</title>
 
   <!-- Font Awesome 6 Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -12,11 +12,11 @@
 
   <style>
     :root {
-      --primary: #9d174d;
-      --secondary: #db2777;
-      --accent: #f43f5e;
+      --primary: #831843;
+      --secondary: #9d174d;
+      --accent: #b45309;
       --surface: #ffffff;
-      --bg: #fdf2f8;
+      --bg: #fdf4f8;
       --text: #1e293b;
       --muted: #64748b;
       --line: #fce7f3;
@@ -50,7 +50,7 @@
 
     /* Hero / Profile Section */
     .hero {
-      background: linear-gradient(135deg, #831843 0%, #be185d 100%);
+      background: linear-gradient(135deg, #701a75 0%, #831843 50%, #9d174d 100%);
       color: #fff;
       text-align: center;
       padding: 26px 20px 24px;
@@ -94,13 +94,14 @@
       font-size: 12.5px;
       opacity: 0.95;
       margin-top: 4px;
+      letter-spacing: 0.3px;
     }
 
-    /* Quick Action Row */
+    /* Quick Action Row (3-Button Layout) */
     .quick-bar {
       display: flex;
       justify-content: space-around;
-      padding: 14px 10px;
+      padding: 14px 20px;
       background: #ffffff;
       border-bottom: 8px solid var(--line);
     }
@@ -115,19 +116,22 @@
       font-weight: 600;
     }
     .quick-btn .icon-circle {
-      width: 44px;
-      height: 44px;
+      width: 48px;
+      height: 48px;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       color: #fff;
-      font-size: 17px;
+      font-size: 18px;
+      transition: transform 0.2s;
     }
-    .btn-call { background: #be185d; }
+    .quick-btn:hover .icon-circle {
+      transform: scale(1.05);
+    }
+    .btn-call { background: #9d174d; }
     .btn-wa   { background: var(--whatsapp); }
-    .btn-dir  { background: #e11d48; }
-    .btn-mail { background: #ec4899; }
+    .btn-dir  { background: #b45309; }
 
     /* Section Styling */
     .section {
@@ -255,7 +259,7 @@
       font-weight: 500;
     }
 
-    /* Services Catalog */
+    /* Collection / Products Catalog */
     .product-card {
       border: 1px solid #fbcfe8;
       border-radius: 12px;
@@ -265,7 +269,7 @@
     }
     .product-img {
       width: 100%;
-      height: 155px;
+      height: 165px;
       object-fit: cover;
       display: block;
     }
@@ -477,7 +481,7 @@
         <img src="logo.png" alt="Beauty hub @ Shriya Logo" onerror="this.onerror=null; this.src='Logo.png';">
       </div>
       <h1>Beauty hub @ Shriya</h1>
-      <div class="role">Professional Makeup, Hair & Beauty Studio</div>
+      <div class="role">Exclusive Clothing & Designer Jewellery</div>
     </div>
 
     <!-- QUICK CALL/WHATSAPP BAR -->
@@ -486,17 +490,13 @@
         <div class="icon-circle btn-call"><i class="fa-solid fa-phone"></i></div>
         Call
       </a>
-      <a href="https://wa.me/919021666008?text=Hello%20Beauty%20hub%20@%20Shriya,%20I%20got%20reference%20from%20your%20Digital%20Card.%20Want%20to%20know%20more%20details." target="_blank" class="quick-btn">
+      <a href="https://wa.me/919021666008?text=Hello%20Beauty%20hub%20@%20Shriya,%20I%20saw%20your%20digital%20card.%20I%20am%20interested%20in%20your%20Clothing%20&%20Jewellery%20collection." target="_blank" class="quick-btn">
         <div class="icon-circle btn-wa"><i class="fa-brands fa-whatsapp"></i></div>
         WhatsApp
       </a>
       <a href="https://www.google.com/maps/search/?api=1&query=Kolhapur" target="_blank" class="quick-btn">
         <div class="icon-circle btn-dir"><i class="fa-solid fa-location-dot"></i></div>
         Direction
-      </a>
-      <a href="mailto:" class="quick-btn">
-        <div class="icon-circle btn-mail"><i class="fa-solid fa-envelope"></i></div>
-        Mail
       </a>
     </div>
 
@@ -506,10 +506,6 @@
         <a href="https://www.google.com/maps/search/?api=1&query=Kolhapur" target="_blank" class="info-row">
           <i class="fa-solid fa-location-dot"></i>
           <span>Kolhapur, Maharashtra, India</span>
-        </a>
-        <a href="mailto:" class="info-row">
-          <i class="fa-solid fa-envelope"></i>
-          <span></span>
         </a>
         <a href="tel:+919021666008" class="info-row">
           <i class="fa-solid fa-phone"></i>
@@ -534,8 +530,8 @@
         <div class="link-tile-left">
           <i class="fa-brands fa-whatsapp"></i>
           <div>
-            <div class="link-tile-title">WhatsApp</div>
-            <div class="link-tile-desc">Chat directly for bookings & queries</div>
+            <div class="link-tile-title">WhatsApp Catalogue</div>
+            <div class="link-tile-desc">Inquire directly for new arrivals & orders</div>
           </div>
         </div>
         <i class="fa-solid fa-chevron-right" style="color:#f472b6; font-size: 13px;"></i>
@@ -546,92 +542,92 @@
     <div class="section" id="about">
       <div class="section-header">About Us</div>
       <p style="font-size: 13px; color: #475569; line-height: 1.6;">
-        Welcome to <strong>Beauty hub @ Shriya</strong>. We offer specialized bridal makeup, hair styling, skin treatments, and customized beauty services tailored to enhance your elegance on every occasion.
+        Welcome to <strong>Beauty hub @ Shriya</strong>. We curate premium women's wear, designer ethnic outfits, and exquisite traditional & fashion jewellery designed to complete your perfect festive, bridal, or casual look.
       </p>
 
       <div class="section-header" style="margin-top: 18px; font-size: 13.5px; border-bottom: none; padding-bottom: 0;">Our Specialities</div>
       <div class="pill-grid">
-        <div class="pill">Bridal & Event Makeup 💄</div>
-        <div class="pill">Hair Styling & Care 💇‍♀️</div>
-        <div class="pill">Facials & Skin Glow ✨</div>
-        <div class="pill">Pre-Bridal Packages 🌸</div>
+        <div class="pill">Designer Clothing 👗</div>
+        <div class="pill">Ethnic & Bridal Wear 🥻</div>
+        <div class="pill">Antique & Fashion Jewellery 💍</div>
+        <div class="pill">Festive Collections ✨</div>
       </div>
     </div>
 
-    <!-- SERVICES SECTION -->
+    <!-- PRODUCTS / COLLECTIONS SECTION -->
     <div class="section" id="services">
-      <div class="section-header">Our Services</div>
+      <div class="section-header">Our Collections</div>
 
       <div class="product-card">
-        <img src="photo1.jpg" alt="Bridal Makeup" class="product-img" loading="lazy" onerror="this.onerror=null; this.src='Photo1.jpg';">
+        <img src="photo1.jpg" alt="Designer Clothing" class="product-img" loading="lazy" onerror="this.onerror=null; this.src='Photo1.jpg';">
         <div class="product-body">
-          <div class="product-title">💄 Bridal & Engagement Makeup</div>
-          <div class="product-desc">HD and airbrush makeup transformations crafted to make your special day unforgettable.</div>
-          <a href="https://wa.me/919021666008?text=Hi,%20I%20am%20interested%20in:%20Bridal%20&%20Engagement%20Makeup." target="_blank" class="enquiry-btn">Enquiry</a>
+          <div class="product-title">👗 Ethnic & Designer Wear</div>
+          <div class="product-desc">Exclusive sarees, kurtis, lehengas, and trending western outfits crafted with quality fabrics.</div>
+          <a href="https://wa.me/919021666008?text=Hi,%20I%20am%20interested%20in:%20Designer%20Clothing%20Collection." target="_blank" class="enquiry-btn">Enquiry</a>
         </div>
       </div>
 
       <div class="product-card">
-        <img src="photo2.jpg" alt="Hair Styling" class="product-img" loading="lazy" onerror="this.onerror=null; this.src='Photo2.jpg';">
+        <img src="photo2.jpg" alt="Fashion Jewellery" class="product-img" loading="lazy" onerror="this.onerror=null; this.src='Photo2.jpg';">
         <div class="product-body">
-          <div class="product-title">💇‍♀️ Hair Styling & Treatment</div>
-          <div class="product-desc">Modern hair styling, spa, smoothing, and bridal hairstyles tailored to your outfit.</div>
-          <a href="https://wa.me/919021666008?text=Hi,%20I%20am%20interested%20in:%20Hair%20Styling%20&%20Treatment." target="_blank" class="enquiry-btn">Enquiry</a>
+          <div class="product-title">💍 Traditional & Fashion Jewellery</div>
+          <div class="product-desc">Stunning necklace sets, earrings, bangles, and bridal jewellery sets tailored to elevate every attire.</div>
+          <a href="https://wa.me/919021666008?text=Hi,%20I%20am%20interested%20in:%20Jewellery%20Collection." target="_blank" class="enquiry-btn">Enquiry</a>
         </div>
       </div>
 
       <div class="product-card">
-        <img src="photo3.jpg" alt="Skin Care" class="product-img" loading="lazy" onerror="this.onerror=null; this.src='Photo3.jpg';">
+        <img src="photo3.jpg" alt="Bridal & Festive Combos" class="product-img" loading="lazy" onerror="this.onerror=null; this.src='Photo3.jpg';">
         <div class="product-body">
-          <div class="product-title">✨ Skin Care & Facial Treatments</div>
-          <div class="product-desc">Revitalizing treatments, organic facials, and skin brightening therapy.</div>
-          <a href="https://wa.me/919021666008?text=Hi,%20I%20am%20interested%20in:%20Skin%20Care%20&%20Facial%20Treatments." target="_blank" class="enquiry-btn">Enquiry</a>
+          <div class="product-title">✨ Bridal & Festive Matching Combos</div>
+          <div class="product-desc">Perfect matching combinations of jewellery and outfits curated specifically for special occasions.</div>
+          <a href="https://wa.me/919021666008?text=Hi,%20I%20am%20interested%20in:%20Bridal%20&%20Festive%20Combos." target="_blank" class="enquiry-btn">Enquiry</a>
         </div>
       </div>
     </div>
 
     <!-- 25 PHOTOS WORK GALLERY SECTION -->
     <div class="section" id="gallery">
-      <div class="section-header">Work Gallery (25 Photos)</div>
+      <div class="section-header">Product Gallery (25 Photos)</div>
       <div class="gallery-grid">
-        <div class="gallery-item" onclick="openLightbox('photo1.jpg')"><img src="photo1.jpg" alt="Work 1" loading="lazy" onerror="this.onerror=null; this.src='Photo1.jpg';"></div>
-        <div class="gallery-item" onclick="openLightbox('photo2.jpg')"><img src="photo2.jpg" alt="Work 2" loading="lazy" onerror="this.onerror=null; this.src='Photo2.jpg';"></div>
-        <div class="gallery-item" onclick="openLightbox('photo3.jpg')"><img src="photo3.jpg" alt="Work 3" loading="lazy" onerror="this.onerror=null; this.src='Photo3.jpg';"></div>
-        <div class="gallery-item" onclick="openLightbox('photo4.jpg')"><img src="photo4.jpg" alt="Work 4" loading="lazy" onerror="this.onerror=null; this.src='Photo4.jpg';"></div>
-        <div class="gallery-item" onclick="openLightbox('photo5.jpg')"><img src="photo5.jpg" alt="Work 5" loading="lazy" onerror="this.onerror=null; this.src='Photo5.jpg';"></div>
-        <div class="gallery-item" onclick="openLightbox('photo6.jpg')"><img src="photo6.jpg" alt="Work 6" loading="lazy" onerror="this.onerror=null; this.src='Photo6.jpg';"></div>
-        <div class="gallery-item" onclick="openLightbox('photo7.jpg')"><img src="photo7.jpg" alt="Work 7" loading="lazy" onerror="this.onerror=null; this.src='Photo7.jpg';"></div>
-        <div class="gallery-item" onclick="openLightbox('photo8.jpg')"><img src="photo8.jpg" alt="Work 8" loading="lazy" onerror="this.onerror=null; this.src='Photo8.jpg';"></div>
-        <div class="gallery-item" onclick="openLightbox('photo9.jpg')"><img src="photo9.jpg" alt="Work 9" loading="lazy" onerror="this.onerror=null; this.src='Photo9.jpg';"></div>
-        <div class="gallery-item" onclick="openLightbox('photo10.jpg')"><img src="photo10.jpg" alt="Work 10" loading="lazy" onerror="this.onerror=null; this.src='Photo10.jpg';"></div>
-        <div class="gallery-item" onclick="openLightbox('photo11.jpg')"><img src="photo11.jpg" alt="Work 11" loading="lazy" onerror="this.onerror=null; this.src='Photo11.jpg';"></div>
-        <div class="gallery-item" onclick="openLightbox('photo12.jpg')"><img src="photo12.jpg" alt="Work 12" loading="lazy" onerror="this.onerror=null; this.src='Photo12.jpg';"></div>
-        <div class="gallery-item" onclick="openLightbox('photo13.jpg')"><img src="photo13.jpg" alt="Work 13" loading="lazy" onerror="this.onerror=null; this.src='Photo13.jpg';"></div>
-        <div class="gallery-item" onclick="openLightbox('photo14.jpg')"><img src="photo14.jpg" alt="Work 14" loading="lazy" onerror="this.onerror=null; this.src='Photo14.jpg';"></div>
-        <div class="gallery-item" onclick="openLightbox('photo15.jpg')"><img src="photo15.jpg" alt="Work 15" loading="lazy" onerror="this.onerror=null; this.src='Photo15.jpg';"></div>
-        <div class="gallery-item" onclick="openLightbox('photo16.jpg')"><img src="photo16.jpg" alt="Work 16" loading="lazy" onerror="this.onerror=null; this.src='Photo16.jpg';"></div>
-        <div class="gallery-item" onclick="openLightbox('photo17.jpg')"><img src="photo17.jpg" alt="Work 17" loading="lazy" onerror="this.onerror=null; this.src='Photo18.jpg';"></div>
-        <div class="gallery-item" onclick="openLightbox('photo18.jpg')"><img src="photo18.jpg" alt="Work 18" loading="lazy" onerror="this.onerror=null; this.src='Photo18.jpg';"></div>
-        <div class="gallery-item" onclick="openLightbox('photo19.jpg')"><img src="photo19.jpg" alt="Work 19" loading="lazy" onerror="this.onerror=null; this.src='Photo19.jpg';"></div>
-        <div class="gallery-item" onclick="openLightbox('photo20.jpg')"><img src="photo20.jpg" alt="Work 20" loading="lazy" onerror="this.onerror=null; this.src='Photo20.jpg';"></div>
-        <div class="gallery-item" onclick="openLightbox('photo21.jpg')"><img src="photo21.jpg" alt="Work 21" loading="lazy" onerror="this.onerror=null; this.src='Photo21.jpg';"></div>
-        <div class="gallery-item" onclick="openLightbox('photo22.jpg')"><img src="photo22.jpg" alt="Work 22" loading="lazy" onerror="this.onerror=null; this.src='Photo22.jpg';"></div>
-        <div class="gallery-item" onclick="openLightbox('photo23.jpg')"><img src="photo23.jpg" alt="Work 23" loading="lazy" onerror="this.onerror=null; this.src='Photo23.jpg';"></div>
-        <div class="gallery-item" onclick="openLightbox('photo24.jpg')"><img src="photo24.jpg" alt="Work 24" loading="lazy" onerror="this.onerror=null; this.src='Photo24.jpg';"></div>
-        <div class="gallery-item" onclick="openLightbox('photo25.jpg')"><img src="photo25.jpg" alt="Work 25" loading="lazy" onerror="this.onerror=null; this.src='Photo25.jpg';"></div>
+        <div class="gallery-item" onclick="openLightbox('photo1.jpg')"><img src="photo1.jpg" alt="Collection 1" loading="lazy" onerror="this.onerror=null; this.src='Photo1.jpg';"></div>
+        <div class="gallery-item" onclick="openLightbox('photo2.jpg')"><img src="photo2.jpg" alt="Collection 2" loading="lazy" onerror="this.onerror=null; this.src='Photo2.jpg';"></div>
+        <div class="gallery-item" onclick="openLightbox('photo3.jpg')"><img src="photo3.jpg" alt="Collection 3" loading="lazy" onerror="this.onerror=null; this.src='Photo3.jpg';"></div>
+        <div class="gallery-item" onclick="openLightbox('photo4.jpg')"><img src="photo4.jpg" alt="Collection 4" loading="lazy" onerror="this.onerror=null; this.src='Photo4.jpg';"></div>
+        <div class="gallery-item" onclick="openLightbox('photo5.jpg')"><img src="photo5.jpg" alt="Collection 5" loading="lazy" onerror="this.onerror=null; this.src='Photo5.jpg';"></div>
+        <div class="gallery-item" onclick="openLightbox('photo6.jpg')"><img src="photo6.jpg" alt="Collection 6" loading="lazy" onerror="this.onerror=null; this.src='Photo6.jpg';"></div>
+        <div class="gallery-item" onclick="openLightbox('photo7.jpg')"><img src="photo7.jpg" alt="Collection 7" loading="lazy" onerror="this.onerror=null; this.src='Photo7.jpg';"></div>
+        <div class="gallery-item" onclick="openLightbox('photo8.jpg')"><img src="photo8.jpg" alt="Collection 8" loading="lazy" onerror="this.onerror=null; this.src='Photo8.jpg';"></div>
+        <div class="gallery-item" onclick="openLightbox('photo9.jpg')"><img src="photo9.jpg" alt="Collection 9" loading="lazy" onerror="this.onerror=null; this.src='Photo9.jpg';"></div>
+        <div class="gallery-item" onclick="openLightbox('photo10.jpg')"><img src="photo10.jpg" alt="Collection 10" loading="lazy" onerror="this.onerror=null; this.src='Photo10.jpg';"></div>
+        <div class="gallery-item" onclick="openLightbox('photo11.jpg')"><img src="photo11.jpg" alt="Collection 11" loading="lazy" onerror="this.onerror=null; this.src='Photo11.jpg';"></div>
+        <div class="gallery-item" onclick="openLightbox('photo12.jpg')"><img src="photo12.jpg" alt="Collection 12" loading="lazy" onerror="this.onerror=null; this.src='Photo12.jpg';"></div>
+        <div class="gallery-item" onclick="openLightbox('photo13.jpg')"><img src="photo13.jpg" alt="Collection 13" loading="lazy" onerror="this.onerror=null; this.src='Photo13.jpg';"></div>
+        <div class="gallery-item" onclick="openLightbox('photo14.jpg')"><img src="photo14.jpg" alt="Collection 14" loading="lazy" onerror="this.onerror=null; this.src='Photo14.jpg';"></div>
+        <div class="gallery-item" onclick="openLightbox('photo15.jpg')"><img src="photo15.jpg" alt="Collection 15" loading="lazy" onerror="this.onerror=null; this.src='Photo15.jpg';"></div>
+        <div class="gallery-item" onclick="openLightbox('photo16.jpg')"><img src="photo16.jpg" alt="Collection 16" loading="lazy" onerror="this.onerror=null; this.src='Photo16.jpg';"></div>
+        <div class="gallery-item" onclick="openLightbox('photo17.jpg')"><img src="photo17.jpg" alt="Collection 17" loading="lazy" onerror="this.onerror=null; this.src='Photo18.jpg';"></div>
+        <div class="gallery-item" onclick="openLightbox('photo18.jpg')"><img src="photo18.jpg" alt="Collection 18" loading="lazy" onerror="this.onerror=null; this.src='Photo18.jpg';"></div>
+        <div class="gallery-item" onclick="openLightbox('photo19.jpg')"><img src="photo19.jpg" alt="Collection 19" loading="lazy" onerror="this.onerror=null; this.src='Photo19.jpg';"></div>
+        <div class="gallery-item" onclick="openLightbox('photo20.jpg')"><img src="photo20.jpg" alt="Collection 20" loading="lazy" onerror="this.onerror=null; this.src='Photo20.jpg';"></div>
+        <div class="gallery-item" onclick="openLightbox('photo21.jpg')"><img src="photo21.jpg" alt="Collection 21" loading="lazy" onerror="this.onerror=null; this.src='Photo21.jpg';"></div>
+        <div class="gallery-item" onclick="openLightbox('photo22.jpg')"><img src="photo22.jpg" alt="Collection 22" loading="lazy" onerror="this.onerror=null; this.src='Photo22.jpg';"></div>
+        <div class="gallery-item" onclick="openLightbox('photo23.jpg')"><img src="photo23.jpg" alt="Collection 23" loading="lazy" onerror="this.onerror=null; this.src='Photo23.jpg';"></div>
+        <div class="gallery-item" onclick="openLightbox('photo24.jpg')"><img src="photo24.jpg" alt="Collection 24" loading="lazy" onerror="this.onerror=null; this.src='Photo24.jpg';"></div>
+        <div class="gallery-item" onclick="openLightbox('photo25.jpg')"><img src="photo25.jpg" alt="Collection 25" loading="lazy" onerror="this.onerror=null; this.src='Photo25.jpg';"></div>
       </div>
     </div>
 
     <!-- INQUIRY FORM (StaticForms) -->
     <div class="section" id="enquiry">
-      <div class="section-header">Book an Appointment</div>
+      <div class="section-header">Order / Inquire Now</div>
       <form action="https://api.staticforms.xyz/submit" method="POST" class="inquiry-form">
         <input type="hidden" name="apiKey" value="sf_f60b608f03e7b8fb2258fe0c">
         <input type="text" name="honeypot" style="display:none">
         
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="tel" name="phone" placeholder="Phone / WhatsApp Number" required>
-        <textarea name="message" rows="3" placeholder="Service required / Appointment date..." required></textarea>
+        <textarea name="message" rows="3" placeholder="Product details / requirements..." required></textarea>
         <button type="submit">Send Inquiry</button>
       </form>
     </div>
@@ -640,11 +636,11 @@
     <div class="section" id="share" style="border-bottom: none;">
       <div class="section-header">Share Profile</div>
       <div class="share-box">
-        <p style="font-size: 12px; color: var(--muted); margin-bottom: 6px;">Scan to open profile directly:</p>
+        <p style="font-size: 12px; color: var(--muted); margin-bottom: 6px;">Scan to view collection directly:</p>
         <img id="qrCode" class="qr-img" src="" alt="Profile QR Code">
         
         <div class="share-direct-wrap">
-          <label>Share profile to any WhatsApp number:</label>
+          <label>Share catalogue to any WhatsApp number:</label>
           <div class="share-input-group">
             <input type="tel" id="targetPhone" placeholder="Enter 10-digit mobile number">
             <button onclick="sendToNumber()"><i class="fa-brands fa-whatsapp"></i> Send</button>
@@ -660,7 +656,7 @@
 
   </div>
 
-  <!-- FLOATING BOTTOM APP NAVIGATION -->
+  <!-- FLOATING BOTTOM NAVIGATION -->
   <nav class="bottom-bar">
     <a href="#home" class="bottom-tab active">
       <i class="fa-solid fa-house"></i>
@@ -671,8 +667,8 @@
       <span>ABOUT</span>
     </a>
     <a href="#services" class="bottom-tab">
-      <i class="fa-solid fa-briefcase"></i>
-      <span>SERVICES</span>
+      <i class="fa-solid fa-gem"></i>
+      <span>COLLECTIONS</span>
     </a>
     <a href="#gallery" class="bottom-tab">
       <i class="fa-solid fa-images"></i>
@@ -691,11 +687,11 @@
   <!-- LIGHTBOX MODAL -->
   <div id="lightbox" class="lightbox-modal" onclick="closeLightbox()">
     <span class="lightbox-close">&times;</span>
-    <img id="lightbox-img" class="lightbox-content" src="" alt="Zoomed Photo" onclick="event.stopPropagation()">
+    <img id="lightbox-img" class="lightbox-content" src="" alt="Zoomed Product" onclick="event.stopPropagation()">
   </div>
 
   <script>
-    // Dynamic QR Code Generation
+    // Set dynamic QR code to current page URL
     document.addEventListener("DOMContentLoaded", () => {
       const currentUrl = window.location.href;
       document.getElementById("qrCode").src = `https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=${encodeURIComponent(currentUrl)}`;
@@ -716,7 +712,7 @@
     // WhatsApp Share Button
     function shareOnWhatsApp() {
       const currentUrl = window.location.href;
-      const message = `Check out *Beauty hub @ Shriya* - Makeup, Hair & Beauty Studio:\n\n${currentUrl}`;
+      const message = `Check out *Beauty hub @ Shriya* - Exclusive Clothing & Designer Jewellery Collection:\n\n${currentUrl}`;
       const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(message)}`;
       window.open(whatsappUrl, '_blank');
     }
@@ -732,7 +728,7 @@
         phone = '91' + phone;
       }
       const currentUrl = window.location.href;
-      const message = `Hello, check out the Digital Card of *Beauty hub @ Shriya*:\n\n${currentUrl}`;
+      const message = `Hello, check out the Digital Catalogue of *Beauty hub @ Shriya* (Clothing & Jewellery):\n\n${currentUrl}`;
       window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
     }
 
@@ -743,10 +739,9 @@
 VERSION:3.0
 FN:Beauty hub @ Shriya
 ORG:Beauty hub @ Shriya
-TITLE:Makeup & Beauty Studio
+TITLE:Clothing & Jewellery Brand
 TEL;TYPE=CELL,VOICE:+919021666008
 ADR;TYPE=WORK:;;Kolhapur;Maharashtra;;India
-EMAIL:
 END:VCARD`;
 
       const blob = new Blob([vcardData], { type: 'text/vcard;charset=utf-8;' });
