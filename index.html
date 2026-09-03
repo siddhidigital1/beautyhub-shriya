@@ -97,7 +97,7 @@
       letter-spacing: 0.3px;
     }
 
-    /* Quick Action Row */
+    /* Quick Action Row (Call, WhatsApp, Direction) */
     .quick-bar {
       display: flex;
       justify-content: space-around;
@@ -283,15 +283,14 @@
       line-height: 1.5;
       margin-bottom: 12px;
     }
-    /* Image directly above Enquiry button */
-    .product-img-above-btn {
+    /* SVG Banner directly above Enquiry button */
+    .product-banner-svg {
       width: 100%;
       height: 175px;
-      object-fit: cover;
       border-radius: 10px;
       display: block;
       margin-bottom: 12px;
-      border: 1px solid #fce7f3;
+      box-shadow: 0 3px 10px rgba(131, 24, 67, 0.12);
     }
     .enquiry-btn {
       display: inline-block;
@@ -489,7 +488,7 @@
       <div class="role">Exclusive Clothing & Designer Jewellery</div>
     </div>
 
-    <!-- QUICK CALL/WHATSAPP BAR -->
+    <!-- QUICK CALL/WHATSAPP/LOCATION BAR -->
     <div class="quick-bar">
       <a href="tel:+919021666008" class="quick-btn">
         <div class="icon-circle btn-call"><i class="fa-solid fa-phone"></i></div>
@@ -559,50 +558,126 @@
       </div>
     </div>
 
-    <!-- PRODUCTS / COLLECTIONS SECTION (Images placed directly above Enquiry button) -->
+    <!-- PRODUCTS / COLLECTIONS SECTION (Branded Graphic Vectors placed above Enquiry button) -->
     <div class="section" id="services">
       <div class="section-header">Our Collections</div>
 
-      <!-- Collection 1: Designer Clothing -->
+      <!-- 1. Ethnic & Designer Clothing Banner -->
       <div class="product-card">
         <div class="product-body">
           <div class="product-title">👗 Ethnic & Designer Clothing</div>
           <div class="product-desc">Exclusive sarees, kurtis, lehengas, and trending ethnic wear designed with premium fabrics and craftsmanship.</div>
           
-          <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=80" 
-               alt="Designer Clothing" 
-               class="product-img-above-btn" 
-               loading="lazy">
+          <svg class="product-banner-svg" viewBox="0 0 500 240" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="bgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#4a041f" />
+                <stop offset="50%" stop-color="#831843" />
+                <stop offset="100%" stop-color="#9d174d" />
+              </linearGradient>
+              <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#fef08a" />
+                <stop offset="50%" stop-color="#d97706" />
+                <stop offset="100%" stop-color="#fde047" />
+              </linearGradient>
+            </defs>
+            <rect width="500" height="240" rx="14" fill="url(#bgGrad1)" />
+            <rect x="12" y="12" width="476" height="216" rx="10" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-dasharray="6,4" opacity="0.75" />
+            <rect x="22" y="22" width="456" height="196" rx="8" fill="rgba(0,0,0,0.2)" stroke="url(#goldGrad)" stroke-width="1" />
+            
+            <g transform="translate(60, 68)" stroke="url(#goldGrad)" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M25 0 L50 45 L0 45 Z" fill="rgba(245, 158, 11, 0.15)"/>
+              <path d="M12 45 L0 100 L50 100 L38 45 Z" fill="rgba(245, 158, 11, 0.25)"/>
+              <path d="M25 20 L25 100"/>
+              <path d="M5 70 Q 25 80 45 70"/>
+              <circle cx="25" cy="-8" r="6" fill="url(#goldGrad)"/>
+            </g>
+
+            <text x="140" y="85" fill="#fef08a" font-family="'Inter', sans-serif" font-size="13" font-weight="700" letter-spacing="2.5">BEAUTY HUB @ SHRIYA</text>
+            <text x="140" y="120" fill="#ffffff" font-family="'Inter', sans-serif" font-size="21" font-weight="800">ETHNIC & DESIGNER WEAR</text>
+            <text x="140" y="148" fill="#fce7f3" font-family="'Inter', sans-serif" font-size="13" opacity="0.9">Sarees • Lehengas • Kurtis • Gowns</text>
+            
+            <rect x="140" y="165" width="165" height="24" rx="12" fill="url(#goldGrad)" />
+            <text x="222" y="181" fill="#4a041f" font-family="'Inter', sans-serif" font-size="10.5" font-weight="700" text-anchor="middle">PREMIUM BOUTIQUE</text>
+          </svg>
           
           <a href="https://wa.me/919021666008?text=Hi,%20I%20am%20interested%20in:%20Designer%20Clothing%20Collection." target="_blank" class="enquiry-btn">Enquiry</a>
         </div>
       </div>
 
-      <!-- Collection 2: Fashion Jewellery -->
+      <!-- 2. Traditional & Fashion Jewellery Banner -->
       <div class="product-card">
         <div class="product-body">
           <div class="product-title">💍 Traditional & Fashion Jewellery</div>
           <div class="product-desc">Stunning necklace sets, earrings, bangles, and bridal jewellery sets tailored to elevate every attire.</div>
           
-          <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=700&q=80" 
-               alt="Fashion Jewellery" 
-               class="product-img-above-btn" 
-               loading="lazy">
+          <svg class="product-banner-svg" viewBox="0 0 500 240" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#3b0764" />
+                <stop offset="50%" stop-color="#581c87" />
+                <stop offset="100%" stop-color="#831843" />
+              </linearGradient>
+            </defs>
+            <rect width="500" height="240" rx="14" fill="url(#bgGrad2)" />
+            <rect x="12" y="12" width="476" height="216" rx="10" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-dasharray="6,4" opacity="0.75" />
+            <rect x="22" y="22" width="456" height="196" rx="8" fill="rgba(0,0,0,0.2)" stroke="url(#goldGrad)" stroke-width="1" />
+            
+            <g transform="translate(60, 65)" stroke="url(#goldGrad)" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M0 10 C 15 70, 45 70, 60 10"/>
+              <path d="M10 20 C 20 60, 40 60, 50 20"/>
+              <circle cx="30" cy="72" r="10" fill="rgba(245, 158, 11, 0.25)"/>
+              <circle cx="30" cy="72" r="4" fill="url(#goldGrad)"/>
+              <path d="M30 82 L30 96"/>
+              <circle cx="30" cy="98" r="3" fill="url(#goldGrad)"/>
+            </g>
+
+            <text x="140" y="85" fill="#fef08a" font-family="'Inter', sans-serif" font-size="13" font-weight="700" letter-spacing="2.5">BEAUTY HUB @ SHRIYA</text>
+            <text x="140" y="120" fill="#ffffff" font-family="'Inter', sans-serif" font-size="21" font-weight="800">FASHION & JEWELLERY</text>
+            <text x="140" y="148" fill="#fce7f3" font-family="'Inter', sans-serif" font-size="13" opacity="0.9">Necklace Sets • Bangles • Bridal Sets</text>
+            
+            <rect x="140" y="165" width="165" height="24" rx="12" fill="url(#goldGrad)" />
+            <text x="222" y="181" fill="#4a041f" font-family="'Inter', sans-serif" font-size="10.5" font-weight="700" text-anchor="middle">EXCLUSIVE DESIGNS</text>
+          </svg>
           
           <a href="https://wa.me/919021666008?text=Hi,%20I%20am%20interested%20in:%20Jewellery%20Collection." target="_blank" class="enquiry-btn">Enquiry</a>
         </div>
       </div>
 
-      <!-- Collection 3: Bridal & Festive Combos -->
+      <!-- 3. Bridal & Festive Combos Banner -->
       <div class="product-card">
         <div class="product-body">
           <div class="product-title">✨ Bridal & Festive Matching Combos</div>
           <div class="product-desc">Harmonious matching combinations of designer outfits and jewellery crafted for festive celebrations and weddings.</div>
           
-          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=80" 
-               alt="Bridal & Festive Combos" 
-               class="product-img-above-btn" 
-               loading="lazy">
+          <svg class="product-banner-svg" viewBox="0 0 500 240" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#701a75" />
+                <stop offset="50%" stop-color="#831843" />
+                <stop offset="100%" stop-color="#b45309" />
+              </linearGradient>
+            </defs>
+            <rect width="500" height="240" rx="14" fill="url(#bgGrad3)" />
+            <rect x="12" y="12" width="476" height="216" rx="10" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-dasharray="6,4" opacity="0.75" />
+            <rect x="22" y="22" width="456" height="196" rx="8" fill="rgba(0,0,0,0.2)" stroke="url(#goldGrad)" stroke-width="1" />
+            
+            <g transform="translate(60, 68)" stroke="url(#goldGrad)" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 55 L15 15 L30 40 L45 15 L55 55 Z" fill="rgba(245, 158, 11, 0.25)"/>
+              <circle cx="15" cy="10" r="3" fill="url(#goldGrad)"/>
+              <circle cx="30" cy="35" r="3" fill="url(#goldGrad)"/>
+              <circle cx="45" cy="10" r="3" fill="url(#goldGrad)"/>
+              <circle cx="30" cy="72" r="14" stroke-dasharray="4,3"/>
+              <text x="30" y="77" font-size="14" fill="url(#goldGrad)" text-anchor="middle" font-weight="bold">✦</text>
+            </g>
+
+            <text x="140" y="85" fill="#fef08a" font-family="'Inter', sans-serif" font-size="13" font-weight="700" letter-spacing="2.5">BEAUTY HUB @ SHRIYA</text>
+            <text x="140" y="120" fill="#ffffff" font-family="'Inter', sans-serif" font-size="21" font-weight="800">BRIDAL & FESTIVE COMBOS</text>
+            <text x="140" y="148" fill="#fce7f3" font-family="'Inter', sans-serif" font-size="13" opacity="0.9">Matching Outfits & Designer Jewellery</text>
+            
+            <rect x="140" y="165" width="165" height="24" rx="12" fill="url(#goldGrad)" />
+            <text x="222" y="181" fill="#4a041f" font-family="'Inter', sans-serif" font-size="10.5" font-weight="700" text-anchor="middle">COMPLETE LOOK PACK</text>
+          </svg>
           
           <a href="https://wa.me/919021666008?text=Hi,%20I%20am%20interested%20in:%20Bridal%20&%20Festive%20Combos." target="_blank" class="enquiry-btn">Enquiry</a>
         </div>
@@ -641,7 +716,7 @@
       </div>
     </div>
 
-    <!-- INQUIRY FORM (StaticForms) -->
+    <!-- INQUIRY FORM (StaticForms Integration) -->
     <div class="section" id="enquiry">
       <div class="section-header">Order / Inquire Now</div>
       <form action="https://api.staticforms.xyz/submit" method="POST" class="inquiry-form">
@@ -655,13 +730,19 @@
       </form>
     </div>
 
-    <!-- SHARE SECTION -->
+    <!-- SHARE SECTION WITH HD PRINT BUTTON -->
     <div class="section" id="share" style="border-bottom: none;">
       <div class="section-header">Share Profile</div>
       <div class="share-box">
         <p style="font-size: 12px; color: var(--muted); margin-bottom: 6px;">Scan to view collection directly:</p>
         <img id="qrCode" class="qr-img" src="" alt="Profile QR Code">
         
+        <div style="margin: 8px 0 12px;">
+          <a href="javascript:void(0)" onclick="downloadHDQR()" style="display: inline-block; background: var(--primary); color: #fff; padding: 7px 16px; border-radius: 6px; font-size: 11.5px; font-weight: 600; text-decoration: none;">
+            <i class="fa-solid fa-download"></i> Download QR for Print
+          </a>
+        </div>
+
         <div class="share-direct-wrap">
           <label>Share catalogue to any WhatsApp number:</label>
           <div class="share-input-group">
@@ -714,7 +795,7 @@
   </div>
 
   <script>
-    // Set dynamic QR code to current page URL
+    // Set dynamic QR code to current live URL
     document.addEventListener("DOMContentLoaded", () => {
       const currentUrl = window.location.href;
       document.getElementById("qrCode").src = `https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=${encodeURIComponent(currentUrl)}`;
@@ -753,6 +834,27 @@
       const currentUrl = window.location.href;
       const message = `Hello, check out the Digital Catalogue of *Beauty hub @ Shriya* (Clothing & Jewellery):\n\n${currentUrl}`;
       window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
+    }
+
+    // Download High-Resolution QR (1000x1000 px) for printing
+    function downloadHDQR() {
+      const currentUrl = window.location.href;
+      const hdQrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=1000x1000&data=${encodeURIComponent(currentUrl)}`;
+      
+      fetch(hdQrUrl)
+        .then(response => response.blob())
+        .then(blob => {
+          const blobUrl = URL.createObjectURL(blob);
+          const link = document.createElement('a');
+          link.href = blobUrl;
+          link.download = 'Beauty_Hub_QR_Print.png';
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        })
+        .catch(() => {
+          window.open(hdQrUrl, '_blank');
+        });
     }
 
     // Native vCard Contact File Generator
